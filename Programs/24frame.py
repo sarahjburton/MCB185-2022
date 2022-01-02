@@ -8,7 +8,7 @@ dna = 'ATGGCCTTT'
 
 
 """
-python3 07_frame.py
+python3 24frame.py
 0 0 A
 1 1 T
 2 2 G

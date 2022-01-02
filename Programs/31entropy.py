@@ -12,6 +12,6 @@ import sys
 
 
 """
-python3 12_entropy.py 0.1 0.2 0.3 0.4
+python3 31entropy.py 0.1 0.2 0.3 0.4
 1.846
 """

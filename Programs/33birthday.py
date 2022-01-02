@@ -18,7 +18,7 @@ import random
 
 
 """
-python3 11_birthday.py
+python3 33birthday.py
 0.571
 """
 

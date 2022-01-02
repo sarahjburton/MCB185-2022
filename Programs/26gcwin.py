@@ -10,7 +10,7 @@ w = 11
 
 
 """
-python3 09_gcwin1.py
+python3 26gcwin.py
 0 ACGACGCAGGA 0.6364
 1 CGACGCAGGAG 0.7273
 2 GACGCAGGAGG 0.7273

@@ -7,7 +7,7 @@
 
 
 """
-python3 04_fizzbuzz.py
+python3 20fizzbuzz.py
 1
 2
 Fizz

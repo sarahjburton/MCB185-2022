@@ -6,6 +6,6 @@
 dna = 'ACTGAAAAAAAAAAA'
 
 """
-python3 06_anti.py
+python3 23anti.py
 TTTTTTTTTTTCAGT
 """

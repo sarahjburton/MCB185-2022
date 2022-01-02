@@ -8,7 +8,7 @@ dna = 'ACAGAGCCAGCAGATATACAGCAGATACTAT' # feel free to change
 
 
 """
-python3 03_gc.py
+python3 21gc.py
 0.42
 0.42
 0.42

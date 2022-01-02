@@ -14,7 +14,7 @@ import sys
 #	Hydrophobic region is 11 aa long, KD > 2.0, after 30 aa
 
 """
-python3 15_transmembrane.py ../Data/at_prots.fa
+python3 40transmembrane.py ../Data/at_prots.fa
 AT1G75120.1
 AT1G10950.1
 AT1G75110.1

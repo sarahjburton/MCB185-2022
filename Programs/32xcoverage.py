@@ -13,6 +13,6 @@ import random
 
 
 """
-python3 14_xcoverage.py 1000 100 100
+python3 32xcoverage.py 1000 100 100
 5 20 10.82375
 """

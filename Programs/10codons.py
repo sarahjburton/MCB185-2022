@@ -8,7 +8,7 @@ dna = 'ATAGCGAATATCTCTCATGAGAGGGAA'
 # your code goes here
 
 """
-python3 01_codons.py
+python3 10codons.py
 ATA
 GCG
 AAT

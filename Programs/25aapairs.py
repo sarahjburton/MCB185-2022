@@ -7,7 +7,7 @@
 
 
 """
-python3 08_aapairs.py
+python3 25aapairs.py
 A C
 A D
 A E

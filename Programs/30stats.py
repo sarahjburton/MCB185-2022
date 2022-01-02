@@ -10,7 +10,7 @@ import math
 
 
 """
-python3 13_stats.py 3 1 4 1 5
+python3 30stats.py 3 1 4 1 5
 Count: 5
 Minimum: 1.0
 Maximum: 5.0

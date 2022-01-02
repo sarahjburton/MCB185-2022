@@ -6,7 +6,7 @@ import sys
 # Use a dictionary to count the letters
 
 """
-python3 16_aacomp.py ../Data/at_prots.fa
+python3 41aacomp.py ../Data/at_prots.fa
 W 528 0.012054244098442994
 C 801 0.018286836217524315
 H 1041 0.023766038080452946

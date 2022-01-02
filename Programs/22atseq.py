@@ -11,6 +11,6 @@ random.seed(1) # comment-out this line to change sequence each time
 
 
 """
-python3 05_atseq.py
+python3 22atseq.py
 30 0.6666666666666666 ATTACCGTAATCTACTATTAAGTCACAACC
 """

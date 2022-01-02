@@ -10,6 +10,6 @@ n = 5
 # your code goes here
 
 """
-python3 02_sumfac.py
+python3 11sumfac.py
 5 15 120
 """
