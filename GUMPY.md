@@ -14,7 +14,7 @@ Here's the overall path through the document
 1. Get a GitHub account, create and fork repos
 2. Install Unix/Linux
 3. Learn some basics of the Unix/Linux command line
-4. Learn about Markdown and files
+4. Learn about files and Markdown formatting
 5. Interact with GitHub using the CLI
 6. Create your first Python program
 7. Learn about file permissions and paths
@@ -31,34 +31,40 @@ your web browser to [https://github.com](GitHub) and create your account.
 Choose a username. It's okay to be clever, but don't be silly. Remember, this
 will be part of your CV. I use my full name. After setting your email and
 password, choose the free plan and then answer a few questions about your
-interests to create your account. Now check your email to verify your email
+interests to create your account. Go to your email to verify your email
 address.
 
 ### Create a Repository ###
 
-It's time to create your first repository, which we normally shorten to _repo_.
+It's time to create your first repository, which we often shorten to _repo_.
 Before we begin, we need to talk a little about ownership, privacy, and
 security.
 
 When you create a repo, you own it. You can read it, write to it, or even
-delete it.
+delete it. Later, you can invite collaborators who can join you in your
+efforts, but by default, only you can make edits.
 
 When a repo is created, it can be either _Public_ or _Private_. A Public
 repository allows other people to download a copy of your repo. This is called
 _cloning_. There is no security risk in cloning a Public repository (unless you
-put sensitive info in there). Nobody can make changes to your files. A Private
-repository is invisible to everyone but you. You can add collaborators to
-Public or Private repos and specify what kinds of permissions each collaborator
-may have. As the owner, you can change a repo from Public to Private and back.
+put sensitive info in there). If people modify their clones, it does not affect
+your files. If you invite them as collaborators and give them write permission,
+they can modify the files in your repo.
+
+A Private repository is invisible to everyone but you. You can add
+collaborators to Public or Private repos and specify what kinds of permissions
+each collaborator may have. As the owner, you can change a repo from Public to
+Private and back.
 
 Now let's go make a repo. Go to the GitHub website and click on the green "New"
 button to create a new repo. Name this _homework_ because this is where you'll
 be submitting your homework. You can make this Public or Private as you like.
-If you make it Private, you'll need to do some extra steps later. Click the
-boxes to initialize with a README, add a .gitignore and a license. Scroll
-through the .gitignore options until you get to "Python". Choose whichever
-license you like. I generally use MIT. Click the "Create Repository" and you
-will be transported to your new mostly empty repo.
+If you make it Private, you'll need to do some extra steps later to give your
+instructor and TA permission to view your files. Click the boxes to initialize
+with a README, add a .gitignore and add a license. Scroll through the
+.gitignore options until you get to "Python". Choose whichever license you
+like. I generally use MIT. Click the "Create Repository" and you will be
+transported to your new mostly empty repo.
 
 If you made your repo Private, you need to give your instructors permission to
 view your repo. Go to the "Settings" link in your repo and then click on
@@ -68,16 +74,19 @@ instructor and TA (you'll have to ask them for their GitHub handles).
 ### Forking a Repository ###
 
 The next step is to fork the MCB185-2022 repo. Point your browser to
-https://github.com/iankorf/MCB185-2022 and then click on the "Fork" button in
-the upper left.
+[https://github.com/iankorf/MCB185-2022](github.com/iankorf/MCB185-2022) and
+then click on the "Fork" button in the upper left.
 
 A _fork_ is different from a _clone_. When a person clones a repo, they do not
 _own_ the repo. As such, they cannot make permanent changes to it. When a
 person forks a repo, they own a copy of that. Meaning that they can make
-permanent changes to their copy. Here's a biological analogy. A clone is like
-an RNA transcript. You can edit the RNA all you like, but it won't make changes
-to the DNA. A fork is like mitosis. The two cells (repos) are independent of
-each other and changes in one do not affect changes in the other.
+permanent changes to their copy (but not yours). Here's a biological analogy. A
+fork is like mitosis. After forking/mitosis, each cell is independent. Changes
+made to one cell have no effect on the other. When cloning, everyone is working
+on the same cell. Changes made in a clone go back to the original cell (but
+again, only if they have permission). If you make changes to a clone when you
+don't have permission, I guess that's a bit like editing an RNA: it doesn't
+affect the genome. OK, it's not a great analogy.
 
 You need to fork the MCB185-2022 repo because you'll want to be able to edit
 some of the files inside. I need to clone your homework repo so I can see your
@@ -116,8 +125,21 @@ get to that, you need Linux.
 
 If your computer is a Mac, you already have Unix installed, and your specific
 flavor of Unix is called Darwin. You can get to the CLI with the _Terminal_
-application. You may also find it useful to install Linux virtual machines on
-your Mac. See the Virtual Machine section below for more information.
+application. However, you might not have `git` and other developer tools
+installed by default. To install these, type the following in your terminal:
+
+	xcode-select --install
+
+This will bring up a dialog box that will prompt you through the install. You
+may want to install other Linux CLI software. For this, there is the
+[https://brew.sh](Homebrew) project. This works similarly to other Linux
+package managers. To install homebrew, type the following in your termins:
+
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+In addition to the Mac's built-in Unix, you may like to run a Linux virtual
+machine because compatibility is always best in Linux. See the Virtual Machine
+section below for more information.
 
 ### Linux on PC ###
 
@@ -126,7 +148,7 @@ Linux _somehow_ and you have several choices. Each of these has advantages and
 disadvantages, which are described in more detail below.
 
 + Virtual machine - recommended
-+ Install Linux on PC - if you have a spare PC
++ Install Linux on a PC - best if you have a spare PC
 + Windows Subsystem for Linux - official Microsoft solution
 + Cygwin - may be useful for advanced users
 + Git bash - may be useful for advanced users
@@ -261,9 +283,9 @@ your school. The downside here is that you'll need a network connection.
 
 The Raspberry Pi is an inexpensive ($50-100) single board computer that is
 about the size of a deck of cards. You can also get one built into a slim
-keyboard. They use Linux as their OS. You just need to provide a keyboard,
-mouse, and HDMI monitor. They work great as a learning platform, but can be
-limiting as some useful bioinformatics software isn't compiled for the Pi.
+keyboard. They use Linux as their OS. You just need to provide a mouse and
+monitor. They work great as a learning platform, but can be limiting as some
+useful bioinformatics software isn't compiled for the Pi.
 
 ### Linux on Chromebook ###
 
@@ -278,6 +300,13 @@ takes a little while to launch the first time.
 I don't really recommend Chromebooks because it's not a popular platform for
 professional bioinformatics work. However, if that's all you have, it will work
 fine for this course.
+
+### Linux on Tablet ###
+
+I don't have any experience with Linux on tablets. I've seen it done, and it
+seems to work okay, but I expect there will be some issues with precompiled
+binaries as there are with the other cellphone-chip-based solutions (Pi,
+Chromebook).
 
 ------------------------------------------------------------------------------
 
@@ -836,7 +865,7 @@ A _bit_ is a single binary digit representing a 0 or 1. The number "1" is just
 1 as we know it. The number "10" is 2 in decimal notation. There is a "1" in
 the 2s place and a 0 in the "1s" place, so 2 + 0 = 2. Similarly, the number
 "11" in binary is 3 in decimal and the number "101" in binary is "5" in decimal
-(1 four, zero 2, 1 one).
+(1 four, 0 two, 1 one).
 
 A byte is 8 bits. Computers usually deal in bytes. So we don't normally talk
 about a number like "101" to represent 5 but rather the 8-digit version of that
@@ -851,35 +880,86 @@ we do so, it's usually in _hexidecimal_ notation. In base 2, there are 2
 symbols: 0 and 1. In base 10 (ordinary decimal) there are 10 symbols: 0, 1, 2,
 3, 4, 5, 6, 7, 8 , and 9. In base 16 (hexidecimal), there are 16 symbols: 0, 1,
 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, and F. So the symbol "B" in hexidecimal
-means "11" in decimal.
+means "11" in decimal. To specify that a number is in hex, it is proceeded with
+"0x". Therefore "0x10" is 16 (1 value in the 16s and nothing in the 1s).
 
 Have you ever seen internet addresses of the form 192.168.1.1? Ever wondered
 what those 4 numbers are? Each one is a byte. So each one can have a value from
 "0b00000000" to "0b11111111". In other words, each value can be from "0x00" to
 "0xFF". Or more familiarly, from 0 to 255. These same byte notations are used
-all over the place in computers. You might have seen colors such as "FF0000" or
-"FF00FF" (those are red and magenta respectively). Or you may have had to use
-the MAC address of your network adapater, which may have looked like
-"f0:18:98:e9:f2:be" (upper and lowercase don't matter in hexidecimal).
+all over the place in computers. For example, you may have had to dig up the
+MAC (media access control) address of your network adapater, which may have
+looked like "f0:18:98:e9:f2:be". Each of those number-like things separated by
+a colon is a byte in the range of 00-ff (upper and lowercase don't matter in
+hexidecimal).
 
-So now it's time to understand the difference between text an binary. A text
-file typically uses only the 7 bits defined by ASCII (American Standard Code
-for Information Interchange). That is, each byte is confined to the range from
-0 to 127. In binary that's "0b00000000" to "0b01111111". In hex, that's "0x00"
-to "0x7F". All of the numbers equal to or greater than than "0b10000000" or
-"0x80" or 128 are outside the ACSII space.
+### Colorspace ###
+
+Another place you may have seen hexidecimal notation is to represent colors. In
+a computer, color is made by mixing three colors of light: red, green, and
+blue. Each of those colors can have an intensity from 0 to 255, which in hex is
+00-FF. For example, if you want to make bright red, you use FF in the red
+channel, 00 in the green channel, and 00 in the blue channel. The most
+efficient way to write this is to mash them all together as FF0000. This can
+also be written as 0xFF0000 or even #FF0000.
+
+Here are some common colors:
+
++ FF0000 Red (only the red channel)
++ 00FF00 Green (only the green channel)
++ 0000FF Blue (only the blue channel)
++ 000000 Black (all channels off)
++ FFFFFF White (all channels on)
++ 808080 Gray (all channels at half)
+
+If you think about the color spectrum, yellow is halfway between red and green.
+So how do we make a color halfway between the two? By turning on those two
+channels. Similarly, halfway between green and blue is cyan. If you think of
+the spectrum as a circle rather than a line, then halfway between blue and red
+is magenta.
+
++ FFFF00 Yellow
++ 00FFFF Cyan
++ FF00FF Magenta
+
+What about the other colors, such as orange? Orange isn't halfway between any
+of the channels. However, it is halfway between red and yellow. To make orange,
+we have to decrease the green channel so that the average is closer to red. How
+about we cut the green in half? FF8000 = Orange.
+
+At this point, you're probably asking yourself, "but what about all of that
+stuff I learned in art class where red + green = brown?". Paints are pigments,
+not sources of life. You have to think about those in the absorption spectrum.
+Red pigment block green and blue, allowing red to come through. Similarly,
+green pigment blocks red and blue, allowing green to come through. When you mix
+pigments, you average the absorptive properties of the two. So red + green
+pigments completely block the blue spectrum and allow about half of the red and
+green to come through. If we were to express that in hex it would look like
+808000, which is a dark yellow, which might as well be brown.
+
+### Back to Binary ###
+
+So now it's time to understand the difference between text and binary files. A
+text file typically uses only the 7 bits defined by ASCII (American Standard
+Code for Information Interchange). That is, each byte is confined to the range
+from 0 to 127. In binary that's "0b00000000" to "0b01111111". In hex, that's
+"0x00" to "0x7F". All of the numbers equal to or greater than than "0b10000000"
+or "0x80" or 128 are outside the ACSII space. Any file using values outside of
+ASCII is binary.
 
 In a plain text file, every symbol (e.g letter or punctuation) has a
 corresponding value in the range of 0-127. For example, captial "A" is
 "0b01000001" or "0x41" or 65 (decimal). Similarly, capital "B" is "0b01000010"
 or "0x42" or 66. The numbers from 0-9 are in ASCII slots 48-57, the capital
 letters are 65-90, the lowercase letters are 97-122, and other symbols are in
-various places (32-47, 58-64, 91-96, 123-127). Everything below 32 is invisible.
+various places (32-47, 58-64, 91-96, 123-127). Everything below 32 is
+invisible.
 
 At this point you may be wondering about other alphabets and how they get
-encoded in a computer. Surely you can't fit all of the symbols in human
-language into the range of 0-127. You can't. There are multi-byte encodings
-that offer many more symbols. But for now, we are only considering ASCII.
+encoded in a computer. Surely you can't fit all of the symbols in known human
+language into the range of 0-127. You can't. However, there are multi-byte
+encodings that offer many more symbols. But for now, we are only considering
+ASCII.
 
 ### Formatting Plain Text ###
 
@@ -887,7 +967,7 @@ Text files are incredibly simple. There are no choices of ruler settings, font
 family, font style, lists, or tables you expect to find in a word processing
 document. However, sometimes you want part of a text file to look like a
 heading, or boldface, or a list. There are lots of ways you can imagine doing
-that from the use of capital letters to punctuation. Markdown is a Internet
+that from the use of capital letters to punctuation. Markdown is a global
 standard for writing text files. If you follow the standard, you can turn your
 plain text documents into beautifully formatted HTML or PDF that has actual
 headings, hyperlinks, font styles, lists, etc.
@@ -899,7 +979,9 @@ Markdown that add a few more things like tables.
 [https://daringfireball.net/projects/markdown](Markdown)
 
 Another way to learn Markdown is to compare an HTML or PDF file to its original
-Markdown plain text source document.
+Markdown plain text source document. If you're viewing this document on GitHub,
+you're viewing it formatted as HTML. You can also look at the raw text either
+on the website or in your forked repo.
 
 Let's create our first Markdown document in `nano`.
 
@@ -928,27 +1010,56 @@ write and a pleasure to read as text, HTML, PDF, etc.
 
 ## GitHub CLI ##
 
-developer PAT
+### Personal Access Token ###
 
-The next step is to add your repository to the Work directory you just created.
-Click on the green **Clone or download** button and copy the URL there. It
-should look something like "https://github.com/USERNAME/learning_python.git",
-where USERNAME is whatever you chose as your GitHub name.
+When you interact with the GitHub website, you use a username and password.
+When you interact with GitHub using the Linux CLI, you cannot use your website
+password. Instead you have to use a "personal access token" (PAT). So the first
+thing we need to do is to generate a PAT.
+
+Log into GitHub and then click on the icon in the top right corner. This will
+drop down a menu where you will find "Settings". Follow that link and you will
+get to your various account settings. Scroll down to the bottom to find
+"Developer Settings". On the next page you will see "Personal access tokens".
+Click on the link to "Generate a personal access token".
+
+In the "Note" you might put in "programming" or something. It doesn't matter.
+
+For "Expiration" you can use any of the values. If you don't want to do this
+again, use the "No expiration" option.
+
+Click on the "repo" checkbox, which will also check the subordiante boxes.
+
+Your personal access token is given to you once. Copy it and save it somewhere
+safe. You can never get to this PAT again. Ever. However, you can generate a
+new one anytime you like, so if you lose your PAT, you can just generate a new
+one. I put my PAT in a personal message to myself in Slack. I also keep it in
+a file on Dropbox.
+
+### Cloning Your Repos ###
+
+Your current repos are locatd on GitHub, but are not in your Linux computer.
+It's time to get them. You'll need a good place to keep all of your GitHub
+repos. I use a directory called "Work" in my home directory. If you want to be
+like me, open a terminal and do the following (substituting YOUR_GITHUB_HANDLE
+for whatever your username is on GitHub).
 
 	cd ~/Work
-	git clone https://github.com/USERNAME/learning_python.git
+	git clone https://github.com/YOUR_GITHUB_HANDLE/homework
+	ls
 
-This will create a new directory called `learning_python` in your `Work`
-directory. If you look inside, you will see that it contains two files:
-`LICENSE` and `README.md`. The LICENSE basically says that other people can use
-your code but that they have to acknowledge that you wrote it and if anything
-bad happens, it wasn't your fault.
+You should now see your homework directory. Go get your fork of MCB185-2022.
+
+	git clone https://github.com/iankorf/MCB185-2022
+	ls
+
+You should see both your homework and MCB185-2022 directories.
 
 ### Git Commands ###
 
-Enter your repository and check its status.
+Enter your homework repository and check its status.
 
-	cd learning_python
+	cd homework
 	git status
 
 You will see that git reports that your repository is up to date. Let's modify
@@ -962,23 +1073,32 @@ After saving your changes, check your repository status again.
 
 	git status
 
-This shows that `README.md` has been changed. In order to put those changes back
-into GitHub, you'll need to `add`, `commit`, and `push`.
+This shows that `README.md` has been changed. In order to put those changes
+back into GitHub, you'll need to `add`, `commit`, and `push`.
 
 	git add README.md
 	git commit -m "update"
 	git push
 
-The `add` argument tells `git` we want to start tracking changes to this file.
+The `add` argument tells `git` we intend to put this file in our repo. Not all
+files in your current directly need to go into your repo. For example, you may
+have some temporary program outout you were using for debugging.
+
 The `commit` tells `git` we are done with edits, and the `-m` provides a short
-message about what work was done. The `push` tells git to upload it back to
-GitHub.
+message about what work was done. The message might be as simple as "update" or
+"edit" or "new", but might be more complex such as "finally squashed the
+formatting bug".
+
+The `push` tells git to upload the file back to GitHub.
+
+When git prompts you for your username, use your GitHub username. For the
+password, copy-paste your GitHub personal access token.
 
 The general workflow with `git` is the following.
 
 1. Create a file
 2. `git add`
-3. `git commit`
+3. `git commit -m "something"`
 4. `git push`
 5. Time passes...
 6. `git pull`
@@ -993,8 +1113,8 @@ It's time to write your first Python program. We're going to do this with
 `nano`. Start `nano` by typing the command name followed by the file you want
 to create.
 
-	cd ~/Work
-	nano hello_world.py
+	cd ~/Work/homework
+	nano 00helloworld.py
 
 Now type the following line:
 
@@ -1003,7 +1123,7 @@ Now type the following line:
 Hit ^O (that's the command key plus the o key) to save the file and the ^W to
 exit nano. Now let's try running the command from the shell.
 
-	python3 hello_world.py
+	python3 00helloworld.py
 
 If everything worked okay, you should have seen 'hello world' in your terminal.
 If not, don't go on. Ask for help fixing your computing environment.
@@ -1015,15 +1135,15 @@ status of your repo.
 
 	git status
 
-This shows that `hello_world.py` is not currently being tracked. So let's add,
+This shows that `00helloworld.py` is not currently being tracked. So let's add,
 commit, and push it.
 
-	git add hello_world.py
+	git add 00helloworld.py
 	git commit -m "initial commit"
 	git push
 
 Check the GitHub website. You'll see that your changes to `README.md` are there
-as well as the new file `hello_world.py`.
+as well as the new file `00helloworld.py`.
 
 It might seem like git is a lot of effor just to upload your code to a website.
 If that's all git did, it would be too much effort, but git allows you to do a
@@ -1036,44 +1156,41 @@ yet. Right now, our focus is on backing up our code and logging our programming
 activity to the GitHub website.
 
 
+## Unix Permissions and Paths ##
 
+Unix file permissions are critical to understand, but a little obscure. To
+understand how they work, we're going to turn our `00helloworld.py` program
+into a proper executable. Be patient in this section, it's complex.
 
-
-
----
-
-Previously, when we wanted to run the program `hello_world.py` we had to
+Previously, when we wanted to run the program `00helloworld.py` we had to
 proceed that with the command `python3`. Most of the programs you've seen so
 far, like `date` or `ls` did not require anything other than the name of the
-program. We can change `hello_world.py` to work in the same manner. While this
-isn't really necessary, it's very important to understand how programs work, so
-we're going to modify `hello_world.py` to be just like `ls`.
+program. We can change `00helloworld.py` to work in the same manner. While this
+isn't really necessary, it's very important to understand how permissions work,
+so we're going to modify `00helloworld.py` to be just like `ls`.
 
-Use nano to edit the file.
+Go to your homework repot and use nano to edit the file.
 
-	nano hello_world.py
+	nano 00helloworld.py
 
 Now modify it so that it looks like the following:
 
 	#!/usr/bin/env python3
 	print('hello world')
 
-The file should have _exactly_ 2 lines. Line 1 has the "hash bang" _interpreter
-directive_. The first line of a text file tells Unix which language to use.
-Make sure the first character of the file is `#` and that there are no
-additional leading spaces. Line 2 is what you had before. Save this file and
-then push the changes back to your repo. We're not done yet. This is just the
-first step.
+Line 1 has the "hash bang" _interpreter directive_. The first line of a text
+file tells Unix which language to use. Make sure the first character of the
+file is `#` and that there are no additional leading spaces. Line 2 is what you
+had before. Save this file and then push the changes back to your repo. We're
+not done yet. This is just the first step.
 
-------------------------------------------------------------------------------
-
-## More Linux ##
+### Programs ###
 
 In order for a text file to function as a program it needs 3 things.
 
 1. An interpreter directive on the first line (we just did this)
 2. Permission to be executed
-3. Placed in the executable path
+3. Located in the executable path
 
 ### File Permissions ###
 
@@ -1107,7 +1224,7 @@ You should see something like the following:
 
 	drwxr-xr-x  2 ian ian 4096 Feb 7 10:01 bin/
 	drwxr-xr-x  2 ian ian 4096 Feb 7 10:01 lib/
-	drwxr-xr-x  2 ian ian 4096 Feb 7 10:11 learning_python/
+	drwxr-xr-x  2 ian ian 4096 Feb 7 10:11 homework/
 
 Let's break down what's happening with the first arcane set of symbols. The
 first letter is `d` which indicates that the file is a directory. We can also
@@ -1123,15 +1240,15 @@ You may read, write, and execute the directory. That is, you have permission to
 Users who belong to your group can also read and enter your directories, but
 they can't modify their contents.
 
-Let's take a look at the permissions of `hello_world.py`.
+Let's take a look at the permissions of `00helloworld.py`.
 
-	cd learning_python
-	ls -l hello_world.py
+	cd homework
+	ls -l 00helloworld.py
 
 On Ubuntu, this is what I found, however the default permissions for your Linux
 distribution may be different.
 
-	-rw-r--r-- 1 ian ian 44 Feb 7 11:00 hello_world.py
+	-rw-r--r-- 1 ian ian 44 Feb 7 11:00 00helloworld.py
 
 After the leading dash, there are 3 triplets of symbols. The first triplet
 shows user permissions `rw-`. I have read and write permission but not execute.
@@ -1150,31 +1267,48 @@ executable permissions. So turning everything on isn't a good idea.
 The `chmod` command has two different syntaxes. The more human readable one
 looks like this.
 
-	chmod u-x hello_world.py
-	ls -l hello_world.py
+	chmod u-x 00helloworld.py
+	ls -l 00helloworld.py
 
 This command says: "change the user (u) to remove (-) the execute (x) permission
 from file hello_world.py". You add permissions with +.
 
-	chmod u+x hello_world.py
-	ls -l hello_world.py
+	chmod u+x 00helloworld.py
+	ls -l 00helloworld.py
 
-The less readable `chmod` format assigns all parameters in octal format. 4 is
-the read permission. 2 is the write permission. 1 is the execute permission.
-Each rwx corresponds to one octal number from 0 to 7. So `chmod 777` turns on
-all permissions for all types of people and `chmod 000` turns them all off.
+The less readable `chmod` format assigns all parameters in octal format
+simultaneously. Once you understand how it works, it's much easier.
+
++ 4 is read permission
++ 2 is write permission
++ 1 is execute permission
++ 0 is no permissions
+
+Every number from 0 to 7 results in a unique set of permission.
 
 | Read | Write | Exec | Sum | Meaning
 |:----:|:-----:|:----:|:---:|:--------
 |   4  |   0   |   0  |  4  | only reading allowed
 |   4  |   2   |   0  |  6  | reading and writing allowed
 |   4  |   2   |   1  |  7  | reading, writing, and executing allowed
-|   4  |   0   |   1  |  1  | reading and executing allowed
+|   4  |   0   |   1  |  5  | reading and executing allowed
+|   0  |   0   |   0  |  0  | nothing allowed
 
+Here are some useful permission sets:
+
++ 600 your private diary (only you can read and write)
++ 644 your source code (you can read and write, others can read)
++ 755 your programs (like above, but executable)
++ 444 data files (everyone can read, nobody can write)
+
+Let's set the permissions on `00helloworld.py` to the most appropriate set
+using the octal format.
+
+	chmod 755 00helloworld.py
 
 ### Making hello_world.py Executable ##
 
-Now that your hello_world.py program has execute permissions, you can use it
+Now that your 0hello_world.py program has execute permissions, you can use it
 like a Unix program. That is, you don't have to type `python3` before the
 program name.
 
@@ -1182,8 +1316,8 @@ program name.
 
 But what's with the `./` before the program name. You don't have to type that
 when you run the `ls` command or the `chmod` command, for example. That's
-because those programs are in your **executable path** and `hello_world.py` is
-not. We'll fix that in a bit.
+because those programs are in your **executable path** and `00helloworld.py` is
+not. We'll fix that in a sec.
 
 ### Files on Flash Drives ###
 
@@ -1221,9 +1355,7 @@ actually invoking `ls -F` which displays the file type by appending a `*` to
 executable files and a `/` to directories.
 
 The second line adds your `Work/bin` directory to the executable path. Now, any
-script you put into `Work/bin` can be run like any other program. Note that
-this is optional. Also, instead of moving programs into `Work/bin` you could
-make aliases there that connect to the original location of the scripts.
+script you put into `Work/bin` can be run like any other program.
 
 To protect yourself from accidentally overwriting or removing files, you might
 want to add interactive mode for a few commands.
@@ -1241,6 +1373,36 @@ similar to the PATH setup you just did.
 
 	export PYTHONPATH=$PYTHONPATH:$HOME/Work/lib
 
+### Finally a Program ###
+
+It's finally time to make `00helloworld.py` work like `ls` and such. Where were
+we with what we needed to do?
+
+1. An interpreter directive on the first line (we did this before)
+2. Permission to be executed (we did this recently)
+3. Located in the executable path
+
+We have a few options here:
+
+1. Move the file from homework to `~/Work/bin`
+2. Copy the file from homework to `~/Work/bin`
+3. Alias the file frome homework to `~/Work/bin`
+
+We don't want to move the file because then it's no longer in our repo. We also
+don't want to copy the file because then we'll have 2 files running around and
+edits in one won't be reflected in the other. The best thing is to use an alias
+so that the shortcut in `~/Work/bin` points to the original file. While we're
+at it, let's change the name of the program from `00helloworld.p` to
+`helloworld`.
+
+	cd ~/Work/bin
+	ln -s ../homework/00helloworld.py ./helloworld
+
+That's it, you're done. Now you can type `helloworld` in your terminal and the
+program runs just like `ls` or any other proper CLI program. Note that you
+generally don't need to do this. There's nothing wrong with `python3
+filename.py` to invoke your python programs.
+
 ## Editors and IDEs ##
 
 It's time to stop using `nano`. While it is useful for very small tasks, it's
@@ -1251,7 +1413,7 @@ Notepad++, Sublime, etc.
 
 Some people prefer programming in an Integrated Development Environment (IDE).
 Popular IDEs for Python include IDLE, PyCharm, Spyder and Eclipse. IDEs can
-make debugging easier as they automatically place your cursor and lines with
+make debugging easier as they automatically place your cursor at lines with
 bugs and let you manually inspect variable contents. While IDEs may make your
 Python programming more efficient, they separate you from Unix. Since one of
 the reasons you are taking this course is to learn some Unix, I don't recommend
@@ -1266,26 +1428,26 @@ on Mac, and Notepad++ on Windows.
 The `wc` program counts the characters, words, and lines in text files. You
 could counts the words in this document, for example.
 
-	wc gumpy.md
+	wc GUMPY.md
 
 One of the most useful programs is `grep`. This prints out lines that match
 specific strings or patterns. For example, if you wanted to print out all the
 lines with the word Unix you would do the following:
 
-	grep Unix gumpy.md
+	grep Unix GUMPY.md
 
 To count how many lines that was, you could either use the `-c` flag to `grep`
 or **pipe** the output to `wc`.
 
-	grep -c Unix gumpy.md
-	grep Unix gumpy.md | wc
+	grep -c Unix GUMPY.md
+	grep Unix GUMPY.md | wc
 
 When working with tabular data, you will find that `sort` is very useful, as it
 let's you sort the lines on different columns.
 
 When monitoring the progress of programs that take a long time to run, you will
-find `time` useful for timing how long a program runs and `top` for monitoring
-how much RAM or other resources a program is taking.
+find `time` useful for timing how long a program runs and `top` or `htop` for
+monitoring how much RAM or other resources a program is taking.
 
 To see how much free space you have on your file system, use the `df` (disk
 free) command with the `-h` option to make it more human-readable (try it both
