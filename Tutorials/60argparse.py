@@ -5,12 +5,10 @@ import argparse
 # This is a template you can use for processing command line arguments
 # Change the names of the arguments to something descriptive
 
-# Commandline: python3 11_argparse.py --r1 yo --r2 1 --r3 0.1
+# Commandline: python3 60argparse.py --r1 yo --r2 1 --r3 0.1
 # Also try:
-#	python3 13_argparse.py
-#	python3 13_argparse.py --help
-
-"""
+#	python3 60argparse.py
+#	python3 60argparse.py --help
 
 # setup
 parser = argparse.ArgumentParser(description='Brief description of program.')
@@ -40,4 +38,3 @@ print(arg.o1, arg.o2, arg.o3)
 if arg.switch: print('switch on')
 else:          print('switch off')
 
-"""

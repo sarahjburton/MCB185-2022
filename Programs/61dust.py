@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# 61dust.py
 
 import argparse
 
@@ -9,3 +10,6 @@ import argparse
 #   entropy threshold
 #   lowercase or N-based masking
 # The program should output a FASTA file (but with Ns or lowercase)
+# Use argparse
+# Use the mcb185.read_fasta() function
+# Put more functions in your mcb185.py library

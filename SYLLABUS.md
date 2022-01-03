@@ -15,8 +15,9 @@ the end of class.
 + Lesson 2: Loops and Conditionals
 + Lesson 3: Tuples and Lists
 + Lesson 4: Functions
-+ Lesson 5: Dictionaries and Data Structures
++ Lesson 5: Dictionaries and Regex
 + Lesson 6: Modules and CLI
++ Lesson 7: Complex Data
 
 Lesson 0: Tools of the Trade
 ============================
@@ -331,12 +332,14 @@ functions like `math.isclose()` to check for equality. This tutorial also
 introduces `assert()`, which you can use to ensure your functions receive
 proper values.
 
-Next, go on to `41files.py`, where you will learn to read files.
+Next, go on to `41files.py`, where you will learn to read and write text files.
+While reading text files is generally safe, writing files can be dangerous if
+you accidentally overwrite another file.
 
 ## Coding Exercises ##
 
-For programming practice, try writing `40transmembrane.py` in the Programs
-directory.
+For programming practice, try writing `40transmembrane.py` and `41aacomp.py` in
+the Programs directory.
 
 ## Python Manifest ##
 
@@ -368,23 +371,29 @@ directory.
 	Programs/41aacomp.py
 
 
-Lesson 5: Dictionaries & Data Structures
-========================================
+Lesson 5: Dictionaries & Regex
+==============================
 
 ## Learning Objectives ##
 
 + Use dictionaries for efficient look up
 + Create dictionaries for counting
 + Sort by dictionaries by key or value
-+ Represent complex data from lists and dictionaries
-+ Relate lists, dictionaries, spreadsheets, and JSON to each other
++ Parse files using regular expressions
 
 ## Tutorials ##
 
-Explain...
+In `50dictionaries.py` you will be introduced to the magic of dictionaries. On
+the one hand, dictionaries are simply lists but instead of putting numbers in
+square brackets, you use text (or other immutable things). Dictionaries are
+both incredibly efficient and convenient. Once you start using them, you will
+use them all the time. However, they are sometimes difficult to understand in
+the beginning.
 
-+ 50dictionaries.py
-+ 51datastructures.py
+In `51regex.py` you will be introduced to another piece of coding magic:
+regular expressions. You have seen something like this before with Unix `grep`.
+Python has its own regex engine which you can use to parse files to find
+specific pieces of data.
 
 ## Coding Exercises ##
 
@@ -392,13 +401,17 @@ You will find the following files in the Programs folder.
 
 1. 50kmers.py - count up kmers in a sequence file
 2. 51translate.py - translate some RNA to protein
-3. 52iid.py - is IID really IID?
+3. 52digest.py - perform a restriction digest
 
 ## Python Manifest ##
 
 ### Keywords
 
+	del
+
 ### Operators
+
+	{}
 
 ### Functions
 
@@ -407,8 +420,13 @@ You will find the following files in the Programs folder.
 	dict.keys()
 	dict.values()
 	dict.items()
+	re.search()
+	re.findall()
+	re.finditer()
 
 ### Libraries
+
+	re
 
 ## File Manifest ##
 
@@ -416,7 +434,6 @@ You will find the following files in the Programs folder.
 	Tutorials/51datastructures
 	Programs/50kmers.py
 	Programs/51translate.py
-	Programs/52iid.py
 
 
 Lesson 6: Modules and CLI
@@ -424,19 +441,15 @@ Lesson 6: Modules and CLI
 
 ## Learning Objectives ##
 
-+ Make your own function library
 + Use argparse to provide a typical Unix command line interface
++ Make your own function library
 
 ## Tutorials ##
-
-The tutorials this lesson are a little different from before. Both
-`60module.py` and `61argparse.py` are really short. They are more like
-templates for future code than actual tutorials.
 
 Modules (the python word for libraries) are the currency of professional
 programmers. Developers write and share libraries. In addition to using other
 peoples' libraries, you should also write your own even if you don't share your
-code with lots of people. Functions make your code more organized.
+code with lots of people. Libraries make your code more organized.
 
 The command line interface (CLI) has standards. If you want your program to
 look and feel like a typical Unix program (and you do) then use `argparse` to
@@ -444,14 +457,23 @@ capture your command line parameters and provide a help interface. We will no
 longer be using `sys.argv` to get data into programs because `argparse` is much
 better.
 
+The tutorials in this lesson are a little different from before.
+`60argparse.py` is a template for all your future programs, not a tutorial.
+That is, every program you write from now on should use the argparse library to
+handle the command line. `60argparse.py` is a reminder of how to do that.
+
+The other tutorial-ish file, `mcb185.py` is a library with a couple useful
+functions inside. Make an alias from `~/Work/lib/mcb185.py` that points to
+`~/Work/MCB185-2022/Tutorials/mcb185.py` so that python can find your library
+from anywhere. Alternatively, you can also put an alias into whatever directory
+you happen to be working in (e.g. homework).
+
 ## Coding Exercises ##
 
 You will find the following program directions in the Programs folder.
 
 1. 60seqstats.py
 2. 61dust.py
-
-orfogram.py?
 
 ## Python Manifest ##
 
@@ -469,23 +491,15 @@ orfogram.py?
 
 ## File Manifest ##
 
-	Tutorials/60module.py
-	Tutorials/61argparse.py
+	Tutorials/60argparse.py
+	Tutorials/mcb185.py
 	Programs/60seqstats.py
 	Programs/61dust.py
 
 
 
-Lesson 7: ?
+Lesson 7: Complex Data
 =========================
-
-Possible topics
-
-- numpy, scipy
-- matplotlib
-- notebook
-- regex
-- data structures vs other things
 
 ## Learning Objectives ##
 
