@@ -1,4 +1,11 @@
+#!/usr/bin/env python3
+# 51translate.py
+
 import sys
+
+# Make a program that translates coding sequences into proteins
+# You have been provided with the genetic code as a dictionary
+# Use the actin sequence in the Data directory
 
 gcode = {
 	'AAA' : 'K',	'AAC' : 'N',	'AAG' : 'K',	'AAT' : 'N',
@@ -19,24 +26,13 @@ gcode = {
 	'TTA' : 'L',	'TTC' : 'F',	'TTG' : 'L',	'TTT' : 'F',
 }
 
-
-for seq in sys.argv[1:]:
-	prot = ''
-	for i in range(0, len(seq), 3):
-		prot += gcode[seq[i:i+3]]
-	print(prot)
-
-# You have been given the code above
-# An example command line is
-#	python3 translate.py ATGCGCCCGAACTAG ATGAAACCCGGGTTT
-
-# Your task is to write a new program with the following features
-# 1. Proper command line (argparse)
-# 2. Reads sequences in from fasta format rather than sys.argv
-# 3. Outputs sequences as fasta format
-# 4. Accepts both uppercase and lowercase letters
-# 5. Translates ambiguous amino acids as X (e.g. for weird codons)
-
-# Hints
-# 1. add functions and put them in your library
-# 2. use string.upper() to normalize case
+"""
+python3 51translate.py ../Data/act1.fa
+MCDDEVAALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQ
+SKRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTEAPLNPKANREKM
+TQIMFETFNTPAMYVAIQAVLSLYASGRTTGVVLDSGDGVTHTVPIYEGYALPHAILRLD
+LAGRDLTDYLMKILTERGYSFTTTAEREIVRDIKEKLCYVALDFEQEMATAASSSSLEKX
+YELPDGQVITVGNERFRCPEAMFQPSFLGMESAGIHETSYNSIMKCDIDIRKDLYANTVL
+SGGTTMYPGIADRMQKEITALAPSTMKIKIIAPPERKYSVWIGGSILASLSTFQQMWISK
+QEYDESGPSIVHRKCF*
+"""

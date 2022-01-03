@@ -118,6 +118,7 @@ print(kd_hydropathy2(seq))
 #    1. outside the function and used globally (as it is here)
 #    2. inside the function
 #    3. outside the function and passed in as an argument
+# There is no single correct answer for this: it depends on the situation
 
 # Sometimes you want to sort a dictionary by keys
 # This is done easily with the sorted() function

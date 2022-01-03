@@ -412,7 +412,8 @@ You will find the following files in the Programs folder.
 
 ## File Manifest ##
 
-	Tutorials/10_dictionary.py
+	Tutorials/50dictionaries.py
+	Tutorials/51datastructures
 	Programs/50kmers.py
 	Programs/51translate.py
 	Programs/52iid.py
@@ -429,7 +430,7 @@ Lesson 6: Modules and CLI
 ## Tutorials ##
 
 The tutorials this lesson are a little different from before. Both
-`xx_module.py` and `xx_argparse.py` are really short. They are more like
+`60module.py` and `61argparse.py` are really short. They are more like
 templates for future code than actual tutorials.
 
 Modules (the python word for libraries) are the currency of professional
@@ -447,9 +448,10 @@ better.
 
 You will find the following program directions in the Programs folder.
 
-1. `xx_orfogram.py`
-2. `xx_seqstats.py`
-3. `xx_dust.py`
+1. 60seqstats.py
+2. 61dust.py
+
+orfogram.py?
 
 ## Python Manifest ##
 
@@ -467,12 +469,14 @@ You will find the following program directions in the Programs folder.
 
 ## File Manifest ##
 
-	Tutorials/
-	Programs/
+	Tutorials/60module.py
+	Tutorials/61argparse.py
+	Programs/60seqstats.py
+	Programs/61dust.py
 
 
 
-Lesson 8: ?
+Lesson 7: ?
 =========================
 
 Possible topics
@@ -489,7 +493,7 @@ Possible topics
 
 ## Tutorials ##
 
-12_
++
 
 ## Coding Exercises ##
 

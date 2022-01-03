@@ -4,6 +4,7 @@ import sys
 
 # Make a program that reports the amino acid composition in a file of proteins
 # Use a dictionary to count the letters
+# Sorting the amino acids by frequency is optional
 
 """
 python3 41aacomp.py ../Data/at_prots.fa

@@ -12,6 +12,9 @@ import sys
 # For our purposes:
 #	Signal peptide is 8 aa long, KD > 2.5, first 30 aa
 #	Hydrophobic region is 11 aa long, KD > 2.0, after 30 aa
+# Hints:
+#   Create a function for KD calculation
+#   Create a function for amphipathic alpha-helix
 
 """
 python3 40transmembrane.py ../Data/at_prots.fa
