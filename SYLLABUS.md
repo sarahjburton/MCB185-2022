@@ -497,17 +497,18 @@ You will find the following program directions in the Programs folder.
 	Programs/61dust.py
 
 
-
 Lesson 7: Complex Data
 =========================
 
 ## Learning Objectives ##
 
-+
++ Create multi-dimensional data structures
++ Relate spreadsheets to lists and dictionaries
++ Relate JSON to python
 
 ## Tutorials ##
 
-+
+
 
 ## Coding Exercises ##
 
