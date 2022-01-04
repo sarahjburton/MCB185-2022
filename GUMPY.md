@@ -74,7 +74,7 @@ instructor and TA (you'll have to ask them for their GitHub handles).
 ### Forking a Repository ###
 
 The next step is to fork the MCB185-2022 repo. Point your browser to
-[https://github.com/iankorf/MCB185-2022](github.com/iankorf/MCB185-2022) and
+https://github.com/iankorf/MCB185-2022 and
 then click on the "Fork" button in the upper left.
 
 A _fork_ is different from a _clone_. When a person clones a repo, they do not
