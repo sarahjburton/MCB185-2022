@@ -1,7 +1,7 @@
-Syllabus for MCB185
-===================
+MCB185 Course
+=============
 
-This is the syllabus for MCB185 as taught in Winter 2022.
+This is the course plan for MCB185 as taught in Winter 2022.
 
 ## Lessons ##
 
@@ -100,8 +100,8 @@ Change directory to the `Programs` directory and try programming the following
 2 programs. The instructions and the expected output are in the file. You
 _just_ have to write the code.
 
-1. 01codons.py
-2. 02sumfac.py
+1. 11codons.py
+2. 12sumfac.py
 
 When you've completed the homework, copy the files to your homework repo. Don't
 forget to _push_ them back up to GitHub.
@@ -508,6 +508,14 @@ Lesson 7: Complex Data
 
 ## Tutorials ##
 
+The lists and dictionaries we've used so far have been one-dimensional. But
+there's a lot of data that is better modeled in multiple dimensions. A commong
+format for two-dimensional data is the spreadsheet. One can think of this as a
+2-dimensional list or a a combination of a list and dictionary. In
+`70datastructures.py` you will be introduced to several ways of combining lists
+and dictionaries. You will also see the very popular
+[https://www.json.org/json-en.html](JSON) format for data interchange. Take a
+looked at the linked website.
 
 
 ## Coding Exercises ##
