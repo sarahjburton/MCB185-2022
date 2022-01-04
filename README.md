@@ -11,3 +11,5 @@ To start the course follow the directions in the `COURSE.md` file.
 + `Tutorials` - tutorials written in python source code
 + `Programs` - programs to write
 + `Data` - data files used by tutorials and programs
++ `finalprojects.md` - some ideas for final projects
+
