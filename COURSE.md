@@ -241,15 +241,6 @@ there.
 	Programs/26gcwin.py
 	Programs/27gcwin.py
 
-1. 20fizzbuzz.py
-2. 21gc.py
-3. 22atseq.py
-4. 23anti.py
-5. 24frame.py
-6. 25aapairs.py
-7. 26gcwin.py
-8. 27gcwin.py
-
 Lesson 3: Tuples and Lists
 ==========================
 
