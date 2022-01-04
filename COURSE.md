@@ -3,21 +3,18 @@ MCB185 Course
 
 This is the course plan for MCB185 as taught in Winter 2022.
 
-## Lessons ##
+## Schedule ##
 
-The lessons are currently designed for a 10-week quarter with some flexibility.
-Lesson 0 may take more than 1 week because of late adds and drops. For grading
-purposes, there are homework assignments in Lessons 0-6 and a final project for
-the end of class.
-
-+ Lesson 0: Tools of the Trade
-+ Lesson 1: Variables, Math, and Loops
-+ Lesson 2: Loops and Conditionals
-+ Lesson 3: Tuples and Lists
-+ Lesson 4: Functions
-+ Lesson 5: Dictionaries and Regex
-+ Lesson 6: Modules and CLI
-+ Lesson 7: Complex Data
++ Week 1 - Lesson 0
++ Week 2 - Lesson 0
++ Week 3 - Lesson 1
++ Week 4 - Lesson 2
++ Week 5 - Lesson 3
++ Week 6 - Lesson 4
++ Week 7 - Lesson 5
++ Week 8 - Lesson 6
++ Week 9 - Lesson 7
++ Week 10 - Final Project
 
 Lesson 0: Tools of the Trade
 ============================
