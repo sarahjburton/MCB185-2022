@@ -5,6 +5,8 @@ import json
 
 # Move the triple quotes downward to uncover each segment of code
 
+"""
+
 # In a 2D list, each element of a list contains another list
 
 list2d = [
@@ -33,13 +35,13 @@ print(list2d)
 # One way to store this is in a 2D list
 
 sheet = [
-	['Name', 'Age', 'Job'],
+	['Name', 'Age', 'Job'], # the title line isn't really data though...
 	['Ian', 54, 'Professor'],
 	['Chris', 20, 'Student'],
 	['Jo', 31, 'Developer'],
 ]
 
-print(sheet[1][1]) # but this doesn't feel right...
+print(sheet[1][1]) # this doesn't feel right...
 
 # Another way to store this is a list of dictionaries
 # Each row is a "record"
@@ -57,9 +59,22 @@ for person in sheet:
 
 print(json.dumps(sheet, indent=4))
 
-# How would you create a format for genome data?
-# Chromsomes have genes
-# Genes have transcripts
-# Transcripts have exons and introns
+# You can also start with JSON and turn it into python
 
+js = '''
+{
+	"Class": "MCB185",
+	"Title": "Programming for Biologists",
+	"Instructor": "Ian Korf",
+	"Students": [
+		{"Name": "Sue D. Monas", "Year": 3},
+		{"Name": "Mike R. Cocus", "Year": 4},
+		{"Name": "Earl N. Meyer", "Year": 2}
+	]
+}
+'''
 
+jd = json.loads(js)
+print(json.dumps(jd, indent=4))
+
+"""

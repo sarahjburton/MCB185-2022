@@ -517,11 +517,10 @@ and dictionaries. You will also see the very popular
 [https://www.json.org/json-en.html](JSON) format for data interchange. Take a
 looked at the linked website.
 
-
 ## Coding Exercises ##
 
-You will find the following program directions in the Programs folder.
-
+There are no coding exercises this week. You should be working on a final
+project. Ask your instructor.
 
 ## Python Manifest ##
 
@@ -533,8 +532,13 @@ You will find the following program directions in the Programs folder.
 
 ### Methods
 
+	json.dumps()
+	json.loads()
+
 ### Libraries
 
+	json
 
 ## File Manifest ##
 
+	Tutorials/70datastructures.py
