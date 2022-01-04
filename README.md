@@ -7,8 +7,7 @@ To start the course follow the directions in the `COURSE.md` file.
 
 + `README.md` - this document
 + `COURSE.md` - the lessons
-+ `GUMPY.md` - intro to GitHub, Unix, Markdown, and Python
++ `GUMPY.md` - intro to GitHub, Unix, Markdown, and Python (Lesson 0)
 + `Tutorials` - tutorials written in python source code
 + `Programs` - programs to write
 + `Data` - data files used by tutorials and programs
-
