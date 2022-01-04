@@ -176,7 +176,7 @@ your real and virtual machines are running on 4 GB each. Computers run more
 efficiently with more RAM, especially if you're the type of person to have 20
 browser tabs open. Adding more RAM to your computer will improve your VM
 experience. You can also run a VM with less RAM if you use a lightweight Linux
-distribution like LinuxLite or Lubuntu.
+distribution like Lubuntu or LinuxLite.
 
 On the CPU side, your programs running in a VM will run slower than they could.
 The difference is pretty negligible though. We're talking 1-10% slower. You
@@ -188,8 +188,11 @@ is the desktop Graphical User Interface (GUI). Some look like old-school
 Windows while others look like Mac OS, and still others offer their own unique
 look and feel. As bioinformatics programmers, we're more interested in the CLI
 than the GUI, so I don't concern myself too much with what the desktop looks
-like. My personal favorite distribution for VMs is LinuxLite. You can run it in
-1 GB RAM with 1 CPU and it works fine.
+like. Here are some recommendations for setting up your VM.
+
++ Linux: Lubuntu
++ VM Memory: 2 GB
++ Disk: use default types, 40G variable size
 
 Make sure you read the installation directions fully. There are some
 post-install customizations you might need to do. On VirtualBox these include:
