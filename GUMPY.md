@@ -1389,7 +1389,7 @@ We have a few options here:
 
 1. Move the file from homework to `~/Work/bin`
 2. Copy the file from homework to `~/Work/bin`
-3. Alias the file frome homework to `~/Work/bin`
+3. Alias the file from homework to `~/Work/bin`
 
 We don't want to move the file because then it's no longer in our repo. We also
 don't want to copy the file because then we'll have 2 files running around and
