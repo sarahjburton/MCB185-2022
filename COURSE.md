@@ -162,8 +162,11 @@ Lesson 2: Loops and Conditionals
 
 ## Learning Objectives ##
 
-* Conditional Execution - Boolean type, if, elif, else, while, break, continue
-* String Formatting - various ways or printing
+* Conditional Execution
+* Boolean type
+* if, elif, else
+* while
+* break, continue
 
 ## Tutorials ##
 
