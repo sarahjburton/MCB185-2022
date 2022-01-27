@@ -6,7 +6,7 @@
 # Use no nested loops. Instead, count only the first window
 # Then 'move' the window by adding 1 letter on one side
 # And subtracting 1 letter from the other side
-# Describe the pros/cons of this algorith vs. nested loops
+# Describe the pros/cons of this algorithm vs. nested loops
 
 seq = 'ACGACGCAGGAGGAGAGTTTCAGAGATCACGAATACATCCATATTACCCAGAGAGAG'
 w = 11
