@@ -87,7 +87,7 @@ import sys
 print(sys.argv) # not very interesting, program name is first item
 
 # Try running this tutorial with some extra words on the command line
-# python3 07_lists.py 1 3.14
+# python3 30lists.py 1 3.14
 
 # This is one way you get data from outside your program to inside
 # Note that the list is a bunch of strings
