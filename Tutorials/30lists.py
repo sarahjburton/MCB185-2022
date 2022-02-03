@@ -54,7 +54,6 @@ arr.append('four') # adds 'four' to the end of a list
 print(arr)
 
 last = arr.pop() # removes the last element of a list and returns it
-
 print(last, arr)
 
 arr.insert(2, 'ok')  # inserts 'ok' at position 2
