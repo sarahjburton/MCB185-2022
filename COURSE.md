@@ -303,8 +303,8 @@ and expected output are inside each file as usual.
 	Programs/33birthday.py
 
 
-Lesson 4: Functions
-===================
+Lesson 4: Functions & Files
+===========================
 
 ## Learning Objectives ##
 
