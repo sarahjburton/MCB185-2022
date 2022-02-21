@@ -358,8 +358,8 @@ the Programs directory.
 
 	Tutorials/40functions.py
 	Tutorials/41files.py
-	Programs/40transmembrane.py
-	Programs/41aacomp.py
+	Programs/40aacomp.py
+	Programs/41transmembrane.py
 
 
 Lesson 5: Dictionaries & Regex
