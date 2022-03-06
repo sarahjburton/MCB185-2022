@@ -6,6 +6,7 @@ propose something else. You are encouraged to work in pairs.
 
 + Challenging
 	+ Horizontal Gene Transfer
+	+ Missing K-mers
 	+ Prokaryotic Gene Finding
 	+ IMEter
 	+ Longest ORF
@@ -82,6 +83,10 @@ reports the longest ORF as a protein. The program should optionally report
 + Choose the longest ORF
 + Download an mRNA dataset (get help from instructor if needed)
 + Compare your translations to the _official_ translations
+
+## Missing K-mers ##
+
+Which K-mers are missing in a genome?
 
 ## Overlaps ##
 
