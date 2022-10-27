@@ -6,7 +6,7 @@ import random
 
 # Move the triple quotes downward to uncover each segment of code
 
-"""
+
 
 # ---------------------------------- Tuples ---------------------------------- #
 
@@ -130,10 +130,15 @@ dna = 'ACGT'
 for thing in enumerate(dna):
 	print(thing, thing[0], thing[1]) # pay attention here!
 
+# for i in range(len(dna)):
+	#print(i, dna[0], dna[1])
+	#difference?
+
 # The 'thing' can be unpacked explicitly into named variables
 
 for i, nt in enumerate(dna):
 	print(i, nt)
+
 
 # ------------------------------- zip() Function -------------------------------
 
@@ -194,4 +199,3 @@ print(square3)
 square3 = [i ** 2 for i in range(10) if i % 3 == 0]
 print(square3)
 
-"""

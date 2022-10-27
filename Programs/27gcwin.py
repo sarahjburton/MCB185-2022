@@ -10,6 +10,39 @@
 
 seq = 'ACGACGCAGGAGGAGAGTTTCAGAGATCACGAATACATCCATATTACCCAGAGAGAG'
 w = 11
+GC_count = 0
+
+'''
+for i in range(0,w):
+	if seq[i] == 'C': GC_count += 1
+	elif seq[i] == 'G': GC_count += 1
+print(0, seq[0:w], '%.4f' % (GC_count / w))
+'''
+
+for i in range(len(seq) -w +1):
+	win = seq[i:i+w]
+	C_count = win.count('C')
+	G_count = win.count('G')
+	GC_count = C_count + G_count
+	print(i, seq[i:i+w], '%.4f' % (GC_count / len(seq[i:i+w])))
+	#GC_count2 = seq[i:i+w].count('C') + seq[i:i+w].count('G')
+	#print(GC_count2)
+	''''
+	previous = seq[i-1]
+	nxt = seq[i+w-1]
+	print(previous, nxt)
+	print(i)
+	if previous == 'G' or previous == 'C': 
+		GC_count -= 1
+	if nxt == 'C' or nxt == 'G': 
+		GC_count += 1
+	print(i, seq[i:i+w], '%.4f' % (GC_count / w))
+'''
+
+#Pros: more intuitive
+#Cons: longer code, takes longer to run
+
+
 
 """
 python3 27gcwin.py

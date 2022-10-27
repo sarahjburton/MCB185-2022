@@ -5,7 +5,6 @@ import random
 
 # Move the triple quotes downward to uncover each segment of code
 
-"""
 
 # You can put loops inside of loops
 # Make sure you have your indentation correct
@@ -42,4 +41,4 @@ for nt1 in nts:
 		else: print('-1', end='\t')
 	print()
 
-"""
+

@@ -5,7 +5,7 @@ import math
 
 # Move the triple quotes downward to uncover each segment of code
 
-"""
+
 
 # The 'for' loop the most common loop construct you will use
 # Note the indentation of the print(i) statement below
@@ -71,4 +71,4 @@ for n in range(0, precision):
 	e += 1/math.factorial(n)
 	print(e, math.e - e)
 
-"""
+

@@ -6,6 +6,20 @@
 
 dna = 'ATGGCCTTT'
 
+# single loop
+
+for i in range(len(dna)):
+	print(i, i%3, dna[i])
+	
+# nested loop
+	
+for i in range (0, len(dna), 3):    
+    for j in range (0,3):
+        c = i + j
+        print (c, j, dna[c])
+
+
+
 
 """
 python3 24frame.py

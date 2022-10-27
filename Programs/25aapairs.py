@@ -6,6 +6,20 @@
 # Also print out how many combinations there are
 
 
+aa = 'ARNDCQEGHILKMFPSTWYV'
+print(len(aa)) #20 amino acids
+
+num_combos = 0
+
+
+
+for i in range(len(aa)):
+	for j in range(i+1, len(aa)):
+		print(aa[i],aa[j])
+		num_combos += 1
+
+print(num_combos)
+
 """
 python3 25aapairs.py
 A C

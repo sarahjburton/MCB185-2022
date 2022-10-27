@@ -7,7 +7,10 @@ dna = 'ATAGCGAATATCTCTCATGAGAGGGAA'
 
 # your code goes here
 
-"""
+for i in range(0,len(dna),3):
+	print(dna[i:i+3])
+	
+""" output
 python3 10codons.py
 ATA
 GCG

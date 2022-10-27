@@ -6,6 +6,16 @@
 
 dna = 'ACAGAGCCAGCAGATATACAGCAGATACTAT' # feel free to change
 
+GC_count = 0
+
+for i in range(len(dna)):
+	nt = dna[i]
+	if nt == "G" or nt == "C":
+		GC_count += 1
+
+GC_content = GC_count/len(dna)
+print(GC_content)
+
 
 """
 python3 21gc.py

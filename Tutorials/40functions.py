@@ -6,7 +6,7 @@ import random
 
 # Move the triple quotes downward to uncover each segment of code
 
-"""
+
 
 # A function is created with the def keyword, a name, and a colon
 # All of the statements in a function are indented
@@ -220,4 +220,3 @@ for seq in seqgen(3000, 1000000): print(seq)
 for r in (random.random() for i in range(10)):
 	print(r)
 
-"""

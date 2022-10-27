@@ -6,7 +6,7 @@ import random
 
 # Move the triple quotes downward to uncover each segment of code
 
-"""
+
 
 # A dictionary is like a list, but with text instead of numeric indicies
 
@@ -130,4 +130,4 @@ for k in sorted(aa2kd):
 for k, v in sorted(aa2kd.items(), key=lambda item: item[1]):
 	print(k, v)
 
-"""
+

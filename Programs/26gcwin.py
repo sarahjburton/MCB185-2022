@@ -7,7 +7,16 @@
 
 seq = 'ACGACGCAGGAGGAGAGTTTCAGAGATCACGAATACATCCATATTACCCAGAGAGAG'
 w = 11
+GC_count = 0
 
+for i in range(len(seq) -w +1):
+	w_seq = seq[i:i+w]
+	for j in w_seq:
+		if j == 'G': GC_count += 1
+		elif j == 'C': GC_count +=1
+	print(i, w_seq, '%.4f' % (GC_count / w))
+
+		
 
 """
 python3 26gcwin.py

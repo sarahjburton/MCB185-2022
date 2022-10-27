@@ -5,7 +5,7 @@ import json
 
 # Move the triple quotes downward to uncover each segment of code
 
-"""
+
 
 # In a 2D list, each element of a list contains another list
 
@@ -77,4 +77,4 @@ js = '''
 jd = json.loads(js)
 print(json.dumps(jd, indent=4))
 
-"""
+

@@ -5,7 +5,7 @@ import re
 
 # Move the triple quotes downward to uncover each segment of code
 
-"""
+
 
 string1 = "0123456789"
 
@@ -68,4 +68,4 @@ for match in re.finditer(HinF1, seq):
 
 print(re.findall(HinF1, seq))
 
-"""
+

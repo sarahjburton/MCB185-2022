@@ -9,6 +9,17 @@ n = 5
 
 # your code goes here
 
+tot_sum = 0
+factorial = 1
+
+for i in range(1,n+1):
+	tot_sum += i
+	factorial *= i
+
+print(n, tot_sum, factorial)
+
+
+
 """
 python3 11sumfac.py
 5 15 120
