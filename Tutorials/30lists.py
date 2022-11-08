@@ -121,6 +121,7 @@ for i in range(len(p)):
 
 print(sum1, sum2)
 
+
 # ---------------------------- enumerate() Function ----------------------------
 
 # The enumerate() function returns a tuple of index and item

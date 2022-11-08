@@ -52,6 +52,7 @@ def get_random_read(seq, read_length):
 read_length = int(sys.argv[2])
 read_number = int(sys.argv[3])
 
+
 all_random_reads = []
 for i in range(0,read_number):
 	random_read = get_random_read(seq,read_length)
@@ -59,25 +60,88 @@ for i in range(0,read_number):
 
 print(all_random_reads)
 
+
+
+
+
 #index list
-for i in range(0,)
+
+#for i in all_random_reads:
+	#indexing = seq.find(all_random_reads[i])
+
+#print(indexing)
+
+'''
+indexes = []
+w = len(sys.argv[2])
+for i in range(len(seq) - w +1):
+	win = seq[i:i+w]
+	for j in all_random_reads:
+		if win == all_random_reads[j]:
+			indexes.append(j)
+
+print(indexes)
+'''
+'''
+indexes = []
+w = len(sys.argv[2])
+for i in range(len(seq) - w +1):
+	win = seq[i:i+w]
+	if win == random_read:
+		indexes.append(seq.index(win))
+
+print(indexes)
+'''
 
 
+indexes = []
+w = len(sys.argv[2])
+'''
+for i in range(0,read_number):
+	random_read = get_random_read(seq,read_length)
+	all_random_reads.append(random_read)
+'''
 
+for j in range(len(seq) - w +1):
+	win = seq[j:j+w]
+	if win == get_random_read(seq,read_length):
+		indexes.append(seq.index(win))
+
+print(all_random_reads)
+print(indexes)
+
+
+'''
+restriction_pattern = sys.argv[3]
+
+w = len(restriction_pattern)
+
+indexes = []
+for i in range(len(seq1) - w +1):
+	win = seq1[i:i+w]
+	if win == restriction_pattern:
+		print(seq1.index(win))
+		indexes.append(seq1.index(win))
+
+print(indexes)
+	'''	
+'''
 for i in all_random_reads:
-	indexing = seq.find(all_random_reads[i])
-
-print(indexing)
+	if all_random_reads[i] == 
 	
-
-	
-
+w = len(restriction_pattern)
+indexes = []
+for i in range(len(seq1) - w +1):
+	win = seq1[i:i+w]
+	if win == restriction_pattern:
+		print(seq1.index(win))
+		indexes.append(seq1.index(win))
 
 # Find function
 start_index_Arrays = string_to_index.find("Arrays")
 print(start_index_Arrays)
 #output is six
-
+'''
 
 """
 python3 32xcoverage.py 1000 100 100
